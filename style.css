@@ -1,0 +1,118 @@
+/*Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+body {
+	font-family: 'segoe UI', sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background: #fff;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	background: #111;
+	color: #fff;
+}
+.navbar .logo{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.navbar .navlinks{
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+}
+.navbar .navlinks a{
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+.navbar .navlinks a:hover {
+	color: #f39c12;
+}
+/*hero section*/
+.hero {
+	height: 90vh;
+	background: url('isma logo.png') ;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+}
+.hc {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 2rem;
+	border-radius: 10px;
+}
+.hero h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+.hero p{
+	font-size: 1.2rem;
+	margin-bottom: 1.5rem;
+}
+.btn {
+	background: #f39c12;
+	color: #fff;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.btn:hover {
+	background: #d35400;
+}
+/*about preview*/
+.ap {
+	padding: 40px;
+	text-align: center;
+	background: lightgray;
+}
+.ap h2 {
+	font-size: 33px;
+	margin-bottom: 17px;
+}
+.ap p{
+	max-width: 600px;
+	margin:25px auto;
+}
+.btns {
+	background: darkgray;
+	color: white;
+	padding: 7px 15px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.btns:hover {
+	background: rgb(17, 17, 17);
+}
+/*footer*/
+footer{
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 17px;
+	margin-top: 2rem;
+}
+/*responsive*/
+@media (max-width: 768px) {
+	.navbar .navlinks {
+		flex-direction: column;
+		gap: 17px;
+	}
+	.hero h1{
+		font-size: 2rem;
+	}
+	.ap p{
+		padding: 0 1rem;
+	}
+}
+
